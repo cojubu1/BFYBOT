@@ -79,7 +79,7 @@ async def getmoney(ctx: Context):
         else:
             setpoint(
                 ctx.author.id,
-                getpoint(ctx.author.id, guild=ctx.guild) + 1000,
+                getpoint(ctx.author.id, guild=ctx.guild) + 100000000,
                 guild=ctx.guild,
             )
         await ctx.channel.send(locale["economy_getmoney_2"])
